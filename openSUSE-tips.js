@@ -129,7 +129,7 @@ code[62] = 'rpm -qc';
 tips[63] = '列出指定软件包包含的所有文件';
 code[63] = 'rpm -ql';
 tips[64] = '查找并显示指定文本文件中不包含分号的行';
-code[64] = 'grep -v ";" 指定文本文件';
+code[64] = 'grep -v ";" <指定文本文件>';
 
 index = Math.floor(Math.random() * tips.length);
 document.write("&nbsp;"+tips[index]+':&nbsp;&nbsp;<code>'+code[index]+'</code>');
