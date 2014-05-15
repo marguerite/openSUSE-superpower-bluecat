@@ -1,5 +1,5 @@
-tips = new Array(46);
-code = new Array(46);
+tips = new Array(68);
+code = new Array(68);
 tips[0] = '安装软件包';
 code[0] = 'sudo zypper in <软件包名>';
 tips[1] = '升级软件包';
@@ -94,6 +94,56 @@ tips[45] = '前往指定文件夹';
 code[45] = 'cd <指定文件夹路径>';
 tips[46] = '前往指定文件夹后还能回来';
 code[46] = 'pushd <指定文件夹路径>, ls, popd';
+tips[47] = '在终端查看日期和显示日历'
+code[47] = 'date,cal'
+tips[48] = '查看某个磁盘分区可用空间'
+code[48] = 'df /dev/sdaX'
+tips[49] = '以直观的方式显示系统可用内存'
+code[49] = 'free -h'
+tips[50] = '将工作目录改为先前的工作目录'
+code[50] = 'cd -'
+tips[51] = '确定文件类型'
+code[51] = 'file <你要确定类型的文件>'
+tips[52] = '常用字符类'
+code[52] = '匹配任意一个字母或者数字，[:alnum:]； 匹配任意一个字母，[:alpha:]；匹配任意一个数字，[:digit]'
+tips[53] = '复制整个目录到另一个目录下'
+code[53] = 'cp -r <想要复制的目录> <目标目录>'
+tips[54]='合并多个 flv 视频文件'
+code[54]='mencoder -oac pcm -ovc copy -idx -o <合并后的文件> <需要合并的文件1> <需要合并的文件2> ... ... '
+tips[55]='将文件移动到一个目录中，只移动目标目录中不存在的文件'
+code[55]='mv -u file1 file2'
+tips[56]='创建符号链接'
+code[56]='ln -s item link'
+tips[57]='花括号扩展，一次性创建目录 FileA FileB FileC'
+code[57]='mkdir File{A,B,C}'
+tips[58]='花括号扩展，一次性创建以日期为文件名的文件夹'
+code[58]='mkdir {2013..2053}-0{1..9} {2013..2053}-{10..12}'
+tips[59]='命令替换'
+code[59]='ls -l $(which cp)'
+tips[60]='在终端中移动光标到行首,移动到行末'
+code[60]='Ctrl-A，Ctrl-B'
+tips[61]='改变文件所有者和群组'
+code[61]='chowm [ower][:[group]] file'
+tips[62]='以树状模式输出进程列表'
+code[62]='pstree'
+tips[63]='将文件打包成 iso 映像'
+code[63]='mkiso -o <目标 ISO 文件的名称> <要打包的目录>'
+tips[64]='修复闪存'
+code[64]='先卸载闪存，sudo fsck /dev/sdbX'
+tips[65]='从 CD 中创建 iso 镜像'
+code[65]='dd if=/dev/cdrom of=XXX.ISO'
+tips[66]='从 /etc/passwd 文件中提取每一行的第一个字段'
+code[66]='cut -d ':' -f 1 /etc/passwd | head'
+tips[67]='合并文本行'
+code[67]='paste file1.txt file2.txt'
+tips[68]='连接两个文件中具有相同字段的行'
+code[68]='join file1 file2'
+
+
+
+
+
+
 
 index = Math.floor(Math.random() * tips.length);
 document.write("&nbsp;"+tips[index]+':&nbsp;&nbsp;<code>'+code[index]+'</code>');
