@@ -1,5 +1,5 @@
-tips = new Array(46);
-code = new Array(46);
+tips = new Array(65);
+code = new Array(65);
 tips[0] = '安装软件包';
 code[0] = 'sudo zypper in <软件包名>';
 tips[1] = '升级软件包';
@@ -130,6 +130,8 @@ tips[63] = '列出指定软件包包含的所有文件';
 code[63] = 'rpm -ql';
 tips[64] = '查找并显示指定文本文件中不包含分号的行';
 code[64] = 'grep -v ";" <指定文本文件>';
+tips[65] = 'zypper 安装一个软件包的同时安装/卸载另一个软件包";
+code[65] = 'sudo zypper in <软件包1> +/-<软件包2>";
 
 index = Math.floor(Math.random() * tips.length);
 document.write("&nbsp;"+tips[index]+':&nbsp;&nbsp;<code>'+code[index]+'</code>');
