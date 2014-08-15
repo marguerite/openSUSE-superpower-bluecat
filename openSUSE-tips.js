@@ -132,8 +132,8 @@ tips[64] = '查找并显示指定文本文件中不包含分号的行';
 code[64] = 'grep -v ";" <指定文本文件>';
 tips[65] = 'zypper 安装一个软件包的同时安装/卸载另一个软件包";
 code[65] = 'sudo zypper in <软件包1> +/-<软件包2>";
-tips[66] = '安装新字体后,重建字体缓存'
-code[66] = 'fc-cache -fv'
+tips[66] = '安装新字体后,重建字体缓存';
+code[66] = 'fc-cache -fv';
 
 index = Math.floor(Math.random() * tips.length);
 document.write("&nbsp;"+tips[index]+':&nbsp;&nbsp;<code>'+code[index]+'</code>');
