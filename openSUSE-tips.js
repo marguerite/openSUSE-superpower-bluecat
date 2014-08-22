@@ -1,5 +1,5 @@
-tips = new Array(66);
-code = new Array(66);
+tips = new Array(67);
+code = new Array(67);
 tips[0] = '安装软件包';
 code[0] = 'sudo zypper in <软件包名>';
 tips[1] = '升级软件包';
@@ -134,6 +134,9 @@ tips[65] = 'zypper 安装一个软件包的同时安装/卸载另一个软件包
 code[65] = 'sudo zypper in <软件包1> +/-<软件包2>';
 tips[66] = '安装新字体后,重建字体缓存';
 code[66] = 'fc-cache -fv';
+tips[67] = '安装软件包';
+code[67] = 'rpm -ivh <软件包名>';
+
 
 index = Math.floor(Math.random() * tips.length);
 document.write("&nbsp;"+tips[index]+':&nbsp;&nbsp;<code>'+code[index]+'</code>');
