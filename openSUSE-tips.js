@@ -1,5 +1,5 @@
-tips = new Array(67);
-code = new Array(67);
+tips = new Array(68);
+code = new Array(68);
 tips[0] = '安装软件包';
 code[0] = 'sudo zypper in <软件包名>';
 tips[1] = '升级软件包';
